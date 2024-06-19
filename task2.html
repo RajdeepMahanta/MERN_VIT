@@ -1,16 +1,75 @@
 <html>
-    <head>
-        <title>Task 2</title>
-    </head>
-    <body> Lists can be nested (list inside list):
-        <ul type="disc">
-            <li>Coffee</li>
-            <li>Tea</li>
-            <ul type="circle">
-                <li>Black tea</li>
-                <li>Green tea</li>
-            </ul>
-            <li>Milk</li>
-        </ul>
-    </body>
+<head><title>Task 2</title>
+<style>
+/* Vertical Navigation Bar */
+.vertical-nav {
+  width: 200px;
+  background-color: #f0f0f0;
+}
+
+.vertical-nav a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: blue;
+}
+
+.vertical-nav .home {
+  background-color: orange;
+  color: white;
+}
+
+.vertical-nav a:not(.home) {
+  background-color: #8fe0fb;
+}
+
+/* Horizontal Navigation Bar */
+.horizontal-nav {
+    width: 400px;
+    display: flex;
+    background-color: #cccccc;
+    
+}
+
+.horizontal-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color:blue;
+    border-right: 1px solid blue;
+}
+
+.horizontal-nav a:not(.home){
+    background-color:#cccccc;
+}
+
+.horizontal-nav .home {
+    background-color: #969696;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+Vertical Navigation Bar
+<br><br>
+<!-- Vertical Navigation Bar -->
+<div class="vertical-nav">
+<a href="#" class="home">Home</a>
+<a href="#">Java</a>
+<a href="#">CSS</a>
+<a href="#">HTML</a>
+<a href="#">Bootstrap</a>
+</div>
+<br><br><br>
+Horizontal Navigation Bar
+<br><br>
+<!-- Horizontal Navigation Bar -->
+<div class="horizontal-nav">
+<a href="#" class="home">Home</a>
+<a href="#">Java</a>
+<a href="#">HTML</a> 
+<a href="#">CSS</a> 
+</div>
+
+</body>
 </html>
