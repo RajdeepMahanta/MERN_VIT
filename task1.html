@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Task 1</title>
+    </head>
+    <body>
+        <script>
+            function reverseNumber(number) {
+                const reversedString = number.toString().split('').reverse().join('');
+                return parseInt(reversedString, 10);
+            }
+            const x = 32243;
+            const reversedX = reverseNumber(x);
+            console.log(`Input: ${x}, Reversed Output: ${reversedX}`);
+        </script>
+    </body>
+</html>
