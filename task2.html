@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Task 2</title>
+    </head>
+    <body>
+        <script>
+            function sortAlphabetically(inputStr) {
+                const charArr = inputStr.split('');
+                const sortedArr = charArr.sort();
+                const sortedStr = sortedArr.join('');
+
+                return sortedStr;
+            }
+            const input = 'webmaster';
+            const sortedOutput = sortAlphabetically(input);
+            console.log(`Input: ${input}, Sorted Output: ${sortedOutput}`);
+        </script>
+    </body>
+</html>

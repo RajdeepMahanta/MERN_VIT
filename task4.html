@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Task 4</title>
+</head>
+<body>
+    <button id="dateButton">Show Date</button>
+    <p id="dateOutput"></p>
+
+    <button id="timeButton">Show Time</button>
+    <p id="timeOutput"></p>
+
+    <script>
+        const dateButton = document.getElementById("dateButton");
+        const timeButton = document.getElementById("timeButton");
+        const dateOutput = document.getElementById("dateOutput");
+        const timeOutput = document.getElementById("timeOutput");
+
+        dateButton.addEventListener("click", () => {
+            const currentDate = new Date();
+            const options = {day: 'numeric', month: 'long', year: 'numeric' };
+            const formattedDate = currentDate.toLocaleDateString(undefined, options);
+            dateOutput.textContent = `${formattedDate}`;
+        });
+
+        timeButton.addEventListener("click", () => {
+            const currentTime = new Date();
+            const options = { hour: '2-digit', minute: '2-digit', second: '2-digit'};
+            const formattedTime = currentTime.toLocaleTimeString(undefined, options);
+            const opt = {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+            const fmtdDate = currentTime.toLocaleDateString(undefined, opt);
+            timeOutput.textContent = `${fmtdDate} ${formattedTime} GMT+0530 (India Standard Time)`;
+        });
+    </script>
+</body>
+</html>
