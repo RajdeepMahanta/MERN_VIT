@@ -1,16 +1,42 @@
-<html>
-    <head>
-        <title>Task 1</title>
-    </head>
-    <body>
-        <script>
-            function reverseNumber(number) {
-                const reversedString = number.toString().split('').reverse().join('');
-                return parseInt(reversedString, 10);
-            }
-            const x = 32243;
-            const reversedX = reverseNumber(x);
-            console.log(`Input: ${x}, Reversed Output: ${reversedX}`);
-        </script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        li{
+            display : inline ;
+            text-transform: uppercase;
+        }
+        p{
+            display: inline;
+        }
+        #rb{
+            background-color:grey;
+            height:50rem;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 class="text-center bg-info my-0">Ethnus layout</h3>
+    <div class="row bg-secondary my-0">
+        <ul class="list col-10">
+            <li class="text-light px-4">Home</li>
+            <li class="text-light px-4">Menu</li>
+            <li class="text-light px-4">About</li>
+            <li class="text-light px-4">Contact</li>
+        </ul>
+        <ul class=" rightlist col-2">
+            <li class="text-light px-4">Signup</li>
+            <li class="text-light px-4">Login</li>
+        </ul>    
+    </div>
+    <div class="row">
+        <div class="col-10 text-center">Write your content here</div>
+        <div class="col-2 text-center" id="rb">This is</div>
+    </div>
+</body>
 </html>
